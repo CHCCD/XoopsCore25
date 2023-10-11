@@ -145,4 +145,5 @@ return array(
     'xlsb'  => 'application/vnd.ms-excel.sheet.binary.macroEnabled.12',
     'xlsm'  => 'application/vnd.ms-excel.sheet.macroEnabled.12',
     'xlsx'  => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-    'xps'   => 'application/vnd.ms-xpsdocument');
+    'xps'   => 'application/vnd.ms-xpsdocument',
+    'mkv'   => 'video/x-matroska');
