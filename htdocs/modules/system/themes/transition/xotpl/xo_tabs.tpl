@@ -26,10 +26,10 @@
             <p><{$smarty.const._OXYGEN_HELP_DESC_3}></P>
         </div>
     </div>
-    <div><{xoBlock id=4}></div>
-    <div><{xoBlock id=9}></div>
-    <div><{xoBlock id=8}></div>
-    <div><{xoBlock id=10}></div>
+    <div><{xoBlock id='4'}></div>
+    <div><{xoBlock id='9'}></div>
+    <div><{xoBlock id='8'}></div>
+    <div><{xoBlock id='10'}></div>
 </div>
 
 <script type="text/javascript">
