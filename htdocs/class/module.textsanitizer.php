@@ -480,6 +480,8 @@ class MyTextSanitizer
             if (!get_magic_quotes_gpc()) {
                 $text = addslashes($text);
             }
+        }else{
+            $text = addslashes($text);
         }
 
         return $text;
