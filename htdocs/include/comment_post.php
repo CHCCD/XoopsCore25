@@ -461,7 +461,7 @@ switch ($op) {
                 $not_modid = $com_modid;
                 include_once $GLOBALS['xoops']->path('include/notification_functions.php');
                 $not_catinfo  = & notificationCommentCategoryInfo($not_modid);
-                $not_category = $not_catinfo['name'];
+                $not_category = $not_catinfo['name'] ?? '';
                 $not_itemid   = $com_itemid;
                 $not_event    = $notify_event;
                 // Build an ABSOLUTE URL to view the comment.  Make sure we
