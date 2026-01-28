@@ -430,7 +430,6 @@ class XoopsFormElement
             $eltmsg     = str_replace([':', '?', '%'], '', $eltmsg);
             $eltmsg     = str_replace('"', '\"', stripslashes($eltmsg));
             $eltmsg     = strip_tags($eltmsg);
-            echo $this->getFormType();
             switch ($this->getFormType()) {
                 case 'checkbox':
                     return NWLINE . "if (!myform.{$eltname}.checked) { window.alert(\"{$eltmsg}\"); myform.{$eltname}.focus(); return false; }\n";
