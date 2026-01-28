@@ -913,7 +913,7 @@ class XoopsMemberHandler
         $logData = [
             'event' => $event,
             'timestamp' => date('Y-m-d H:i:s'),
-            'user_id' => isset($GLOBALS['xoopsUser']) ? (int)$GLOBALS['xoopsUser']->getVar('uid') : 'anonymous',
+            'user_id' => (isset($GLOBALS['xoopsUser']) && is_object($GLOBALS['xoopsUser'])) ? (int)$GLOBALS['xoopsUser']->getVar('uid') : 'anonymous',
             'ip' => $_SERVER['REMOTE_ADDR'] ?? 'unknown'
         ];
 
