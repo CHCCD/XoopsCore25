@@ -294,6 +294,7 @@ class XoopsSessionHandler implements
 
         $storedIp = $row[0] ?? null;
         if (!$this->validateSessionIp(is_string($storedIp) ? $storedIp : null)) {
+            $this->destroy($id);
             return false;
         }
 
